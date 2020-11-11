@@ -1,0 +1,2 @@
+hola, esta es la línea que vamos a grabar en el fichero
+esta es la ultima linea del fichero

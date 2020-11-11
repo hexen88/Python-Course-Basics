@@ -1,0 +1,7 @@
+Python es uno de los mejores lenguajes de programación de propósito general 
+por ahí y se utiliza ampliamente en aplicaciones web, la investigación científica y más. Hay un montón de entornos de desarrollo o entornos de desarrollo integrado
+ para Python para elegir, algunos de los cuales son gratuitos y 
+algunos se pagan.
+
+De los cuales también tienen una versión gratuita con funciones y h
+erramientas limitadas. Sin embargo, hay algunos IDE de Python menos conocidos, del cual el día de hoy hablaremos sobre uno de ellos.
