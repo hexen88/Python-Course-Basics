@@ -1,0 +1,254 @@
+'''
+
+                            Online Python Interpreter.
+                Code, Compile, Run and Debug python program online.
+Write your code in this editor and press "Run" button to execute it.
+
+'''
+
+#print("Hello World")
+#nombre = 'sebas'
+#cadena='hola mundo'
+#print(len(cadena))
+#cadena=cadena.upper()
+#print('buenos dias ' + nombre)
+#nombre = 'antonio'
+#edad = 18
+#print('buenos dias {}, feliz {} cumpleaños'.format(nombre,edad))
+#print(f,buenos dias{nombre}, feliz {edad} cumpleaños')
+#resultado = 10/3
+#print('el resultado es {r}'.format(r=resultado))
+
+#Entrada por teclado
+#print('introduce un nombre')
+#entrada= input()
+#print('hola',+ entrada)
+
+#cadena = 'esto es un texto de ejemplo'
+longitud = len(cadena)
+mayusculas=cadena.upper()
+#resultado=mayusculas + "tiene logitud de "+srt(longitud) concatenar todo strings.
++ suma
+- resta
+* multiplicar
+# operador resto
+// operador cociente
+
+Operadores de asignación
+=
++= mismo valor + X
+-= mismo valor menos X
+*= misms valor * X
+/= mismo valor / X
+**= mismo valor elevado a X # 2 elevado a 3 x ejemplo.
+
+Operadores de compraración
+num1==num2 si es cierto "true" si no "false"
+!= diferente
+>mayor que
+<menor que
+>=mayor o igual
+<= menor o igual
+
+Operadores lógicos
+and
+or
+not --> si es falso, dara true y al reves.
+ejemplo: (num1 <  num2) and (num3>num4)  si da true todo es correcto.
+
+operadores de identidad.
+frutas1=frutas tendran el mismo
+frutas1 is frutas 2 --> true 
+frutas 1 = frutas2 las dos variables tendran siempre el mismo valor.
+frutas 1 is not frutas3 = no tienen el mismo resultado
+
+OPERADORES DE PERTENENCIA
+IN, NOT IN
+frutas 1 = "manzana", "pera")
+frutas2 = "manzana"
+frutas 2 in frutas 1 --> esta incluido en la lista --> dara true.
+frutas 2 not in frutas 1 --> true--> que no este dentro de la lista.
+
+
+LISTAS
+colores = ["rojo","amarillo,"verde"]
+colores[0] será igual a rojo.
+podemos sustituir --> colores[2]="azul"
+len(colores) dara 3 que son las palabras que hay
+colores.append("narajna") para añadir nuevo elemento.
+colores.remove("rojo") eliminar.
+
+for x in colores: print x
+colores.clear() borra todo
+
+TUPLAS COLECCION ORDENADA QUE NO SE PUEDE MODIFICAR
+tupla_colores = ("azul","verde","amarillo")
+for color in tupla_colores_ print(color)
+tupla_colores[0] muestra el valor 0
+len(tupla_colores) nos devuelve 3 
+
+CONJUNTOS, SON ELEMENTOS DESORDENADOS NO TIENE INDICES.
+se usan con llaves {}
+conjunto_col = {"rojo", "verde","azul")
+NO SE PUEDE ACCEDER A NINGUNA POSICIÓN.
+conjunto_col.add("negro)
+
+DICCIONARIOS
+desordenadores con pares de valores: clave:valor
+diccionario_col = {"red":"rojo","blue:azul"}
+diccionario_col =  ["red"] --> mostrará rojo.
+diccionario_col ["black"] = "negro" lo añadiria a la lista.
+
+Borrra valor
+diccionario_col.pop("yellow") hay qque poner la clave.
+del(diccionario_col["black"]) borra el elemento black
+
+for color in diccionario_col: print(color)
+for clave,color in diccionario_col: print(clave,valor)
+
+CONDICIONES (IF, ELIF, ELSE)
+IF(A<B): PRINT
+
+BUCLE FOR(ITERAR SECUENCIA)
+numero=2,3,4,5,6,7,8
+range(8)
+for numero in range(8): print(numero) --> imprime numero con ese rango.
+si poneoms range(3,8) -> entonces empezaria en el 3 hasta la 7 y si ponemos range(2,3,5) cada separacion de 5 imprimiria.
+
+Break--> para parar el bucle.
+
+for numero in range (10):
+if (numero==5):
+break. // o continue-> continua el bucle.
+
+numero = 1,2,3,4,5,6,7,8,9,0
+for numero in range(10):
+if (numero==6); continue print(numero) IMPRIMIRÁ TODOS MENOS EL 6.
+
+
+BUCLE FOR DOBLE
+
+for numero1 in range(4):
+for numero2 in range(7):
+print(numero1, numero2)
+0 1	1 1
+0 2	1 2
+0 3	1 2
+0 4
+
+y asi.
+
+Range(2,3,4) 2 desde el numero que empieza, 3 dnd acaba, 4 de 4 en 4.
+
+
+
+WHILE
+valor=1
+fin=10
+while valor<fin):
+print(valor)
+valor = valor+1
+if (valor ==5):
+break --> imprime del 1 al 4
+continue--> para la ejecucion en ese numero, imprime todo menos al 6
+
+dicc = {"manzana":"apple"}
+for color, clave in dicc.items():print("{} en inglés es {} ".format(color,clave)
+
+
+CLASES Y OBJETOS PROGRAMACION ORIENADA A OBJETOS
+class clasesilla:
+	color="blanco"
+	precio=100
+objetosilla1 = clasesilla() #objeto de la clase silla.
+
+objetosilla.color
+
+class persona:
+    def __init__(self,nombre,edad):
+        self.nombre = nombre
+        self.edad = edad
+    
+    def saludar(self):
+        print("hola, me llamo {} y tengo {} años".format(self.nombre,self.edad))
+
+persona1 = persona("juan",37)
+persona.edad nos dara la edad
+persona.nombre nos dara el nombre
+persona.saludar(), llama a la función creada.
+
+FUNCIONES
+def saludar(nombre):
+    print("buenos dias "+ nombre)
+nombre = "Antonio"
+
+saludar(nombre)
+
+def sumar(num1,num2):
+    suma=num1+num2
+    return suma
+num1=5
+num2=3
+resultado=sumar(num1,num2)
+
+#paso de valor por referencia
+
+colores = ["rojo","verde","azul"] lista
+def incluir_color(colores, color):
+    colores.append(color)
+color = "negro"
+incluir_color(colores,color)
+
+FUNCIONES LAMBDA(funcion pequeña y anónima.Lo que hace es que le pasamos los valores a una variable.
+lambda recibe parametro y lo devuelve.
+resultado = lambda numero : numero + 30
+luego hacemos: resultado(10) y nos devolverá 40.
+
+
+media = lambda nota1, nota2, nota3 : ((nota1+nota2+nota3)/3)
+
+
+MODULO ES UN FICHERO CON CONJUNTO DE FUNCIONES QUE PODEMOS INCLUIR Y USAR.
+#Modulo
+del saludar(nombre)
+	print("hola soy"+nombre)
+
+# mi programa que llamara al modulo.py
+import modulo1.py
+modulo1.saludar(la variable)
+from modulo1 import despedirse as "el nombre que queramos" solo traer el programa.
+
+
+DOCSTRINGS CADENAS PARA DOCUMENTACIÓN
+def saludar(nombre):
+"""
+Esto sera un comentario de la función saludar
+"""
+
+este comentario al poner: help(saludar) podemos acceder a la documentacion de la funcion
+ #PYDOC
+pydoc y la ruta del archivo(en el terminal) nos da el help.
+pydoc -w y la ruta completa --> nos genera un fichero html de ayuda.
+pydoc -w (y la funcion)  --> nos genera un fichero html de ayuda de la función.
+
+DOCTEST generar pruebas dentro de la documentación
+def sumar(numero1, numero2)
+	""" esta es una funcion de suma se le pasan 2 numeros"""
+
+	>>>sumar(4,3)
+	7
+	"""
+	return num1+num2
+	resultado = sumar(2,4)
+	print(resultado)
+	
+import doctest
+doctest.testmod()
+TERMINAL : PYTHON nombre del fichero.py -v ( y probará la parte de >>> devolviendo si lo ha realizado bien o no)
+
+
+
+
+
+
+
